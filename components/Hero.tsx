@@ -36,7 +36,7 @@ export default function Hero() {
             <h1 className={`${instrumentSerif.className} italic text-white text-4xl sm:text-6xl font-normal`}>
               From <span>Busy</span> to <span>Big</span>
             </h1>
-            <p className="mt-6 text-lg text-white/80">
+            <p className="mt-6 text-lg text-white/80 italic">
               {transforms.hero.subtitle}
             </p>
             <div className="mt-8 flex gap-3">

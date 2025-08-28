@@ -1,0 +1,7 @@
+Task 09: Proof page (95%)
+- Create app/proof/page.tsx with grid of before/after tiles + 1–2 quotes.
+- Use local images with alt text; optional modal TBD later.
+- Motion: staggered tile reveal.
+- Acceptance:
+  - ≥6 tiles, ≥1 blockquote; next/image used; CLS ≤ 0.1.
+  - Lighthouse ≥90 perf for /proof.

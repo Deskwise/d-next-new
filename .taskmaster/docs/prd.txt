@@ -1,0 +1,108 @@
+Project: Deskwise.io Landio Rebuild (Self-Hosted Next.js)
+Owner: Deskwise LLC
+Version: 0.2 (PRD – exhaustive)
+
+1) Background & Goal
+- Rebuild landio.framer.website as a fully self‑hosted marketing site for Deskwise.io.
+- Maintain Landio’s visual/motion feel while mapping to Deskwise’s IA from sitecopy2.md.
+- Remove all external runtimes/CDNs (no Framer runtime). All assets local.
+
+2) Success Metrics (Definition of Done)
+- Lighthouse (mobile/desktop): Perf ≥ 90, Acc ≥ 95, Best Practices ≥ 95, SEO ≥ 95.
+- Core Web Vitals: LCP ≤ 2.5s (p75), CLS ≤ 0.1, INP ≤ 200ms.
+- Zero client console errors on first load of all pages.
+- All acceptance tests (per page + global) pass.
+- Build succeeds on Node 20+, Next 15; runs on VPS behind reverse proxy.
+
+3) Target Stack & Libraries
+- Next.js App Router + TypeScript; Tailwind CSS.
+- Motion.dev for reveals/hover; GSAP only for complex sequences if needed.
+- Lenis for smooth scrolling; Embla for carousels; Lottie React if/when needed.
+- Next/Image for images; next/font/local for fonts; local video with poster.
+- No Framer runtime/CDN dependencies.
+
+4) IA & Pages (from sitecopy2.md)
+Primary:
+- Home — From Busy to Big
+- ThinkWise™
+- The Invisible Engine
+- Orchestrations
+- Plans & Pricing — Momentum Plans
+- Proof
+- Book Friction X‑Ray (conversion page)
+5) Detailed Page Specifications (Acceptance Criteria per Page)
+
+Home (From Busy to Big)
+- Sections (in order): Hero; We Remove / We Enable (two-column); ThinkWise™ teaser; Method (Listen → Diagnose → Prove → Automate → Scale); Orchestrations carousel; Mini proof (before/after tiles); Plans & Guarantees teaser; Final CTA.
+- Hero: full-bleed local video (/public/videos/hero.mp4), poster image, autoplay muted loop playsInline; overlay gradient; headline + subhead + dual CTAs (Book Friction X-Ray / See 60-sec Brief).
+- Motion: scroll reveals (slideUp/fadeIn), staggered lists, CTA hover/tap states; respects prefers-reduced-motion.
+- Orchestrations: Embla carousel with draggable, snap, keyboard nav; GPU transforms only.
+- Perf: image components use <Image>; video has poster; CLS ≤ 0.1.
+- SEO: title/description, Open Graph, canonical.
+- UAT: compare section order, spacing, timings to Landio reference; alignment with sitecopy2 content.
+
+ThinkWise™
+- Explains "question behind the question" → Executive Brief; includes Numbers Brief; Decision Table; options + default; small demo or explainer graphic.
+- Motion: reveal on scroll; optional small Lottie animate-in.
+- UAT: content parity with sitecopy2; avoids technical jargon; strong CTA routing.
+
+The Invisible Engine
+- Explains background automations (research pulls, follow-through nudges, daily briefs) + privacy note.
+- Components: icon list, small timeline, callouts.
+- UAT: privacy/trust framing clear; links to Security & Privacy.
+
+Orchestrations
+- Grid or carousel of playbooks: Campaign Lift-Off, Lead Finder & Enricher, Numbers→Story, PDF→Decision, Morning Ops Brief, SOP in an Afternoon, Market X-Ray.
+- Each card: outcome, proof shape, tiny next step CTA; deep links to Proof/Book X-Ray.
+- Motion: hover lift, staggered grid reveal.
+Plans & Pricing — Momentum Plans (95%)
+- Pathing: create app/plans/page.tsx; route alias "/pricing" via link usage.
+- UI: 3-tier cards (Good/Better/Best) + accelerators (Friction X‑Ray, Proof Sprint).
+- Content source: sitecopy2; copy placeholders with TODO markers.
+- Interactions: hover emphasis; optional monthly/annual toggle (nonfunctional for now).
+- CTAs: primary buttons link to /book-xray; secondary to /contact.
+- Perf: images via next/image; no layout shift; icons as SVG.
+- A11y: focus rings; logical heading order; labels on toggles.
+- Tests (acceptance):
+  - Plans page renders 3 plans + accelerators.
+  - Buttons route to /book-xray and /contact.
+  - No console errors; images use next/image.
+  - Lighthouse ≥90 perf on /plans standalone.
+
+Proof (95%)
+- Pathing: app/proof/page.tsx
+- Layout: grid of before/after tiles + 1–2 quotes; link each tile to details or modal (v2).
+- Assets: use local /public/images/proof/*; add alt text per tile.
+- Motion: staggered reveal on tiles.
+- Tests: grid renders ≥6 tiles; contains at least one blockquote; images via next/image; no CLS.
+Book Friction X‑Ray (95%)
+- Pathing: app/book-xray/page.tsx; canonical route from all primary CTAs.
+- Hero: short explainer + guarantee; form on right (desktop) / below (mobile).
+- Form fields: name, email, company, role, brief problem (textarea), preferred time, consent checkbox.
+- Validation: required fields; email regex; max lengths; submit disabled until valid.
+- Submission: stub handler (logs only) with success state + fallback mailto link.
+- Copy: include guarantee text (“no five‑figure lever, no fee”).
+- Motion: field focus subtle scale/outline; section reveal.
+- A11y: labels, aria‑describedby for errors; keyboard reachable; error summaries.
+- Tests (unit/integration/UAT):
+  - Form validates and shows errors; valid submit shows success state.
+  - All CTAs on site route to /book-xray.
+  - No console errors on submit; no network calls (stubbed).
+  - Mobile layout stacks; desktop two‑column; Lighthouse ≥90 on this page.
+
+ThinkWise™ (95%)
+- Pathing: app/thinkwise/page.tsx; breadcrumb back to Home.
+- Sections: Reasoning layer intro; Executive Brief; Numbers Brief; Decision Table; options + default.
+- Asset: lightweight SVG/PNG explainer; optional Lottie placeholder (deferred load).
+- Motion: reveal per section; anchor links TOC.
+- Tests:
+  - Page renders all sections with headings.
+  - Optional Lottie is lazy‑loaded (no blocking).
+  - No CLS across reveals; internal links scroll to sections.
+
+The Invisible Engine (95%)
+- Pathing: app/engine/page.tsx; link from Home and footer.
+- Sections: background research pulls; follow‑through nudges; daily briefs; privacy note.
+- Components: icon list; mini timeline; callouts linking to Security & Privacy.
+- Motion: staggered list; timeline slide‑in.
+- Tests: headings present; each section has at least one link; privacy note visible; no console errors.

@@ -1,0 +1,7 @@
+Task 08: Plans & Pricing page (95%)
+- Create app/plans/page.tsx (alias 'Pricing' in nav); 3-tier cards + accelerators.
+- Buttons: primary → /book-xray; secondary → /contact.
+- Optional toggle (nonfunctional for now).
+- Acceptance:
+  - 3 cards render + accelerators; routes correct; no console errors.
+  - Lighthouse ≥90 perf for /plans; images via next/image.

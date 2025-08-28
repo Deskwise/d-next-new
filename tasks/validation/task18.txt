@@ -1,0 +1,6 @@
+Task 18: Performance hardening (95%)
+- Add route-level dynamic imports (where helpful); ensure image sizes responsive; preconnect/preload critical assets.
+- next.config.ts: tune images.domains (if needed), experimental turbopack flags retained.
+- Acceptance:
+  - Lighthouse (mobile) Perf ≥ 90 on /, /plans, /book-xray.
+  - Core Web Vitals p75 in budget (LCP ≤ 2.5s, INP ≤ 200ms, CLS ≤ 0.1).

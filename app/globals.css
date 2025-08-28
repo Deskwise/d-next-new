@@ -1,0 +1,39 @@
+@import url("../public/styles/fonts.css");
+@import url("../public/styles/landio-tokens.css");
+@import url("../public/styles/landio-base.css");
+@import "tailwindcss";
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+@theme inline {
+  --color-brand: var(--color-accent);
+  --color-surface: var(--color-bg);
+  --color-white: var(--color-white);
+  --color-dark: var(--color-dark);
+  --color-muted-light: var(--color-muted-light);
+  --color-border: var(--color-border);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+}
+
+.instrument-serif-italic {
+  font-family: 'Instrument Serif', serif !important;
+  font-style: italic !important;
+}
+
+.busy-big-italic {
+  font-family: 'Instrument Serif', serif !important;
+  font-style: italic !important;
+  font-weight: 400 !important;
+}

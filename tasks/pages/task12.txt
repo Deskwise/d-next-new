@@ -1,0 +1,6 @@
+Task 12: Integrations page (95%)
+- Create app/integrations/page.tsx listing categories (CRM, docs, spreadsheets, chat, storage) with logos.
+- Keep assets local; lazy-load logo sections.
+- Acceptance:
+  - Categories render; logos accessible (alt/aria-hidden decoratively); no console errors.
+  - Lighthouse ≥90 perf.

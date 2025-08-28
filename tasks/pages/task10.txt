@@ -1,0 +1,8 @@
+Task 10: Book Friction X‑Ray page (95%)
+- Create app/book-xray/page.tsx with hero + validated form.
+- Fields: name, email, company, role, problem, time, consent.
+- Submit: stub handler; success message; mailto fallback.
+- Accessibility: proper labels, aria, error summaries.
+- Acceptance:
+  - Invalid shows errors; valid shows success state; no network requests.
+  - All CTAs route here; Lighthouse ≥90 perf.

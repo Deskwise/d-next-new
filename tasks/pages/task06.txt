@@ -1,0 +1,8 @@
+Task 06: Implement Invisible Engine page (95%)
+- Create app/engine/page.tsx with sections: research pulls, follow-through nudges, daily briefs, privacy note.
+- Build icon list + mini timeline; link to Security & Privacy.
+- Motion: staggered list + slide-in timeline.
+- Acceptance:
+  - Sections present; links to /privacy exist; no console errors.
+  - Stagger animations respect prefers-reduced-motion.
+  - Lighthouse ≥90 perf for /engine.

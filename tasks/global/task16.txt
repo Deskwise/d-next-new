@@ -1,0 +1,6 @@
+Task 16: Global Navigation + Footer polish (95%)
+- Ensure nav items match IA; active state styling; keyboard focus order; skip-to-content link.
+- Footer: links to Privacy, Terms, Integrations, Contact, Book X‑Ray.
+- Acceptance:
+  - Keyboard users can reach nav, skip link works, focus rings visible.
+  - No Deskwise remnants; brand logo optimized (Image/SVG).

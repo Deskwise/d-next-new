@@ -1,0 +1,6 @@
+Task 01: Project scaffolding hardening (95%)
+- Ensure Next 15 + TS + Tailwind configured; verify scripts dev/build/start.
+- Add Lenis, Motion, Embla, Lottie deps (installed already; verify import usage compiles).
+- Acceptance:
+  - npm run build passes; npm run dev boots at :3000
+  - No unused dep errors; no type errors.

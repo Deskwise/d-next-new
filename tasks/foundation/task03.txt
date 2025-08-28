@@ -1,0 +1,11 @@
+Task 03: Hero video poster + perf + color correction (100%) ✅ COMPLETED
+- ✅ Add poster attribute to components/Hero.tsx video; using /images/TQrIUXh8ngDITyQOpBwlWY70D3s.jpg
+- ✅ Keep autoplay muted loop playsInline preload="auto"
+- ✅ Implemented comprehensive video color correction system
+- ✅ Final optimized CSS filters: brightness(49%) contrast(104%) saturate(25%) hue-rotate(-114deg)
+- ✅ Removed overlay system for performance optimization
+- Acceptance:
+  - ✅ tests/group3-performance-optimization.test.js Task 14 passes
+  - ✅ No console errors; CLS ≤ 0.1 on /
+  - ✅ Video color matches professional dark aesthetic
+  - ✅ Minimal performance overhead with GPU-accelerated CSS filters

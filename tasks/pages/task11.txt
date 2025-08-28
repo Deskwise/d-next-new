@@ -1,0 +1,6 @@
+Task 11: Security & Privacy page (95%)
+- Create app/privacy/page.tsx with data handling, NDA, scope boundaries.
+- Link from footer and Engine page; use simple content blocks.
+- Acceptance:
+  - Page renders; links exist; no console errors.
+  - Lighthouse ≥90 perf; headings logical.

@@ -1,0 +1,6 @@
+Task 13: FAQs page (95%)
+- Create app/faqs/page.tsx with structured Q&A (at least 8 items).
+- Use details/summary or accessible accordion; keyboard support.
+- Acceptance:
+  - All FAQs focusable; toggle works via keyboard; aria-expanded reflects state.
+  - No console errors; Lighthouse ≥90 perf on /faqs.

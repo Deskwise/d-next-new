@@ -1,0 +1,6 @@
+Task 17: Motion parity pass (95%)
+- Audit Landio reference and align timing/easing/offsets using Motion presets; introduce GSAP only if a sequence cannot be reproduced.
+- Respect prefers-reduced-motion; ensure no jank on low-end devices.
+- Acceptance:
+  - Group 4 test expectations satisfied; manual parity check across sections.
+  - No long main-thread tasks; no warnings in Performance panel.

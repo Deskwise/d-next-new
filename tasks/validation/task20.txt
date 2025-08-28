@@ -1,0 +1,6 @@
+Task 20: UAT checklist & final validation (95%)
+- Compile page-by-page UAT checks from PRD; add manual parity notes vs Landio.
+- Run node run-tests.js and address any failing groups; keep all green.
+- Acceptance:
+  - All group tests pass; build clean; no console errors across routes.
+  - Handoff updated; deployment notes prepared for VPS.

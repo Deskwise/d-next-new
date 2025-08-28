@@ -1,0 +1,6 @@
+Task 15: Field Notes (optional) page (95%)
+- Create app/notes/page.tsx; list of short posts (hardcoded stub items).
+- Each post: title, summary, date; links to /notes/[slug] (placeholder pages).
+- Acceptance:
+  - List renders; links resolve; no console errors.
+  - Lighthouse ≥90 perf on /notes.

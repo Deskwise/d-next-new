@@ -1,0 +1,138 @@
+:root {
+  /* Extracted Raw Tokens from Landio Export */
+  --token-a85af9cb-7834-4006-a277-2dd1295ae376: rgb(255, 255, 255); /* White */
+  --token-eb09dbbf-ef85-4b7f-81a5-44e9b062efb7: rgb(4, 7, 13);    /* Darkest Blue/Black */
+  --token-f195ea74-7512-4096-8d91-0e7c7e10d0ab: rgb(213, 219, 230); /* Muted Light Gray */
+  --token-5970a3c6-0f13-482e-8fb6-b8cb7d627b04: rgba(216, 231, 242, 0.07); /* Light Blue Transparent */
+  --token-f213e283-24d0-40a3-a2dc-bca1da07b971: rgb(16, 19, 28);   /* Dark Blue/Gray */
+  --token-4e6adbd8-4eb9-420a-b4f6-0d1bb0e81bd6: rgba(8, 9, 10, 0.75); /* Dark Transparent */
+  --token-5e357ad1-f56a-4886-be0b-ea13c633f85c: rgba(184, 199, 217, 0.5); /* Muted Blue Transparent */
+  --token-55f2535a-f505-405f-bc21-e6a068be519c: rgb(166, 218, 255); /* Accent Blue */
+  --token-98e77689-c0ed-4bec-a0a3-e86d11b001fb: rgba(213, 219, 230, 0.7); /* Muted Light Gray Transparent */
+
+  /* Semantic Mapping */
+  --color-white: var(--token-a85af9cb-7834-4006-a277-2dd1295ae376);
+  --color-dark: var(--token-eb09dbbf-ef85-4b7f-81a5-44e9b062efb7);
+  --color-muted-light: var(--token-f195ea74-7512-4096-8d91-0e7c7e10d0ab);
+  --color-light-blue-transparent: var(--token-5970a3c6-0f13-482e-8fb6-b8cb7d627b04);
+  --color-bg: var(--token-f213e283-24d0-40a3-a2dc-bca1da07b971);
+  --color-dark-transparent: var(--token-4e6adbd8-4eb9-420a-b4f6-0d1bb0e81bd6);
+  --color-border: var(--token-5e357ad1-f56a-4886-be0b-ea13c633f85c);
+  --color-accent: var(--token-55f2535a-f505-405f-bc21-e6a068be519c);
+  --color-text-muted: var(--token-98e77689-c0ed-4bec-a0a3-e86d11b001fb);
+
+  /* General Text Colors */
+  --color-text: var(--color-white);
+
+  /* Typography */
+  --font-sans: "Inter", "Inter Placeholder", sans-serif;
+  --font-serif: "Instrument Serif", serif;
+  --font-display: "Inter", "Inter Placeholder", sans-serif;
+
+  /* Font Weights */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+
+  /* Font Sizes */
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-base: 16px;
+  --font-size-lg: 20px;
+  --font-size-xl: 22px;
+  --font-size-2xl: 36px;
+  --font-size-3xl: 44px;
+
+  /* Line Heights */
+  --line-height-tight: 1.2em;
+  --line-height-normal: 1.3em;
+  --line-height-relaxed: 1.6em;
+  --line-height-fixed: 22px;
+  --line-height-percent: 120%;
+
+  /* Letter Spacing */
+  --letter-spacing-tight: -0.02em;
+  --letter-spacing-normal: -0.01em;
+  --letter-spacing-wide: 0em;
+
+  /* Spacing - Extracted from Landio export */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 28px;
+  --space-8: 32px;
+  --space-9: 36px;
+  --space-10: 40px;
+  --space-11: 44px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-18: 80px;
+  --space-20: 120px;
+  --space-24: 96px;
+
+  /* Responsive Breakpoints - Extracted from Landio */
+  --breakpoint-sm: 390px;
+  --breakpoint-md: 810px;
+  --breakpoint-lg: 1200px;
+  --breakpoint-xl: 1279px;
+
+  /* Container Max Widths */
+  --container-sm: 390px;
+  --container-md: 810px;
+  --container-lg: 1200px;
+  --container-xl: 1279px;
+
+  /* Specific Layout Values */
+  --nav-height: 80px;
+  --hero-padding-mobile: 120px 18px 20px;
+  --hero-padding-desktop: 40px 0;
+  --section-padding-mobile: 80px 18px;
+  --section-padding-desktop: 80px 32px;
+
+  /* Radii */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-full: 999px;
+
+  /* Shadows - Extracted from Landio export */
+  --shadow-soft: 0 8px 32px rgba(0, 0, 0, 0.25);
+  --shadow-accent: 0 8px 24px rgba(113, 178, 255, 0.35);
+  --shadow-editor: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(0, 0, 0, 0.05) 0px 1px 0px 0px, rgba(255, 255, 255, 0.15) 0px 0px 0px 1px;
+  --shadow-inset-light: inset 0 2px 1px #cfe7ff33;
+  --shadow-inset-dark: inset 0px -0.48174984141951427px 0.48174984141951427px -1.25px rgba(0, 0, 0, 0.68), inset 0px -1.8308266425947657px 1.8308266425947657px -2.5px rgba(0, 0, 0, 0.6), inset 0px -8px 8px -3.75px rgba(0, 0, 0, 0.4);
+
+  /* Effects */
+  --backdrop-blur: blur(10px);
+  --backdrop-blur-light: blur(20px);
+
+  /* Opacity */
+  --opacity-10: 0.1;
+  --opacity-20: 0.2;
+  --opacity-30: 0.3;
+  --opacity-40: 0.4;
+  --opacity-50: 0.5;
+  --opacity-60: 0.6;
+  --opacity-70: 0.7;
+  --opacity-80: 0.8;
+  --opacity-90: 0.9;
+
+  /* Gradients - Extracted from Landio export */
+  --gradient-primary: linear-gradient(180deg, var(--color-bg) 0%, var(--color-light-blue-transparent) 100%);
+  --gradient-primary-hover: linear-gradient(0deg, var(--color-bg) 0%, var(--color-light-blue-transparent) 100%);
+  --gradient-button: linear-gradient(135deg, #3b82f6 0%, #6366f1 100%);
+  --gradient-hero-overlay: radial-gradient(80% 60% at 20% 0%, rgba(166, 218, 255, 0.22) 0%, rgba(0, 0, 0, 0) 60%);
+  --gradient-background: radial-gradient(60% 40% at 20% 10%, rgba(96, 165, 250, 0.12) 0%, rgba(0, 0, 0, 0) 60%), radial-gradient(40% 30% at 80% 70%, rgba(168, 85, 247, 0.10) 0%, rgba(0, 0, 0, 0) 60%);
+
+  /* Background Colors - Extracted from Landio export */
+  --bg-primary: var(--color-bg);
+  --bg-secondary: var(--color-light-blue-transparent);
+  --bg-overlay: rgba(34, 34, 34, 0.8);
+  --bg-button: #111;
+  --bg-accent: var(--color-accent);
+}

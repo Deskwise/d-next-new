@@ -1,0 +1,6 @@
+Task 02: Fonts optimization (95%)
+- Create app/fonts.ts using next/font/local; set display: 'swap'.
+- Wire variables into layout body class.
+- Acceptance:
+  - tests/group3-performance-optimization.test.js Task 12 passes
+  - Build succeeds; font CLS negligible.

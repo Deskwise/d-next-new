@@ -1,0 +1,6 @@
+Task 19: SEO & metadata (95%)
+- Add per-page metadata (title/description/OG) via generateMetadata or static export; canonical links.
+- Structured data for Organization + WebSite; sitemap.xml and robots.txt.
+- Acceptance:
+  - Pages render metadata in head; OG images resolve locally.
+  - SEO Lighthouse ≥95; no broken canonical.

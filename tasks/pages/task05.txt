@@ -1,0 +1,8 @@
+Task 05: Implement ThinkWise™ page (95%)
+- Create app/thinkwise/page.tsx using sections: Reasoning layer, Executive Brief, Numbers Brief, Decision Table, Options+Default.
+- Add local SVG/PNG explainer; defer any Lottie.
+- Add in-page TOC (anchor links) for sections.
+- Acceptance:
+  - Page renders with all section headings and anchors working.
+  - No console errors; CLS ≤ 0.1; images via next/image.
+  - Lighthouse ≥90 perf for /thinkwise.

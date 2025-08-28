@@ -1,0 +1,68 @@
+:root {
+/* black */
+--black-100: #000;
+--black-200: #000000;
+--black-300: #04070d;
+--black-400: rgb(4,7,13);
+--black-500: rgb(16,19,28);
+--black-600: rgb(0,0,0);
+--black-700: rgba(8,9,10,.75);
+--black-800: rgba(0,0,0,.8);
+--black-900: rgba(0,0,0,0);
+--black-1000: rgba(4,7,13,0);
+/* white */
+--white-100: #ffffff;
+--white-200: rgb(255,255,255);
+--white-300: rgba(255,255,255,.07);
+--white-400: rgba(255,255,255,.6);
+--white-500: rgba(255,255,255,0);
+--white-600: #fff;
+--white-700: rgba(255,255,255,0.15);
+--white-800: rgba(255,255,255,0.07);
+--white-900: rgba(255,255,255,0.6);
+--white-1000: rgba(255,255,255,0.05);
+/* dodgerblue */
+--dodgerblue-100: #0099ff;
+--dodgerblue-200: rgb(0,153,255);
+/* gainsboro */
+--gainsboro-100: rgb(213,219,230);
+--gainsboro-200: rgba(213,219,230,.7);
+--gainsboro-300: #d5dbe6;
+/* lightskyblue */
+--lightskyblue-100: rgb(166,218,255);
+--lightskyblue-200: rgb(148,209,255);
+--lightskyblue-300: rgba(168,209,255,0.5);
+/* aliceblue */
+--aliceblue-100: rgba(216,231,242,.07);
+--aliceblue-200: rgb(228,233,242);
+--aliceblue-300: rgba(216,231,242,0.07);
+/* lightsteelblue */
+--lightsteelblue-100: rgba(184,199,217,.5);
+--lightsteelblue-200: rgba(184,199,217,0.5);
+/* steelblue */
+--steelblue-100: rgba(64,120,168,0.37);
+--steelblue-200: rgba(64,120,168,0.36);
+--steelblue-300: rgba(64,120,168,0.34);
+--steelblue-400: rgba(64,120,168,0.31);
+--steelblue-500: rgba(64,120,168,0.247);
+--steelblue-600: rgba(64,120,168,0.094);
+--steelblue-700: rgba(87,133,179,0.48);
+--steelblue-800: rgba(87,133,179,0.455);
+--steelblue-900: rgba(87,133,179,0.4);
+--steelblue-1000: rgba(87,133,179,0.21);
+/* firebrick */
+--firebrick-100: rgba(204,8,8,0);
+/* Homepage Colors */
+--black: rgb(7, 9, 15);
+--silver: rgb(185, 188, 194);
+--dimgray: rgb(91, 93, 100);
+--black: rgb(39, 41, 49);
+--gray: rgb(124, 132, 136);
+--black: rgb(28, 36, 36);
+--gray: rgb(132, 132, 132);
+--black: rgb(36, 35, 36);
+--darkslategray: rgb(68, 67, 68);
+--darkslategray: rgb(60, 68, 68);
+--slategray: rgb(124, 124, 140);
+--gray: rgb(132, 124, 124);
+}

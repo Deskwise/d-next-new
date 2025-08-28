@@ -1,0 +1,6 @@
+Task 14: Contact page (95%)
+- Create app/contact/page.tsx with simple contact form + calendar link.
+- Validation: name/email required; basic regex; max lengths.
+- Acceptance:
+  - Invalid shows errors; valid shows success (no network); calendar link visible.
+  - Lighthouse ≥90 perf; no console errors.

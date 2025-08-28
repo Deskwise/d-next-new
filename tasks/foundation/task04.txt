@@ -1,0 +1,12 @@
+Task 04: Replace <img> with Next/Image (95%)
+- Update these files to use `next/image` where appropriate:
+  - components/Features.tsx (feature.image)
+  - components/ValueProps.tsx (benefit.icon if raster; keep inline SVG as <img> or SVG)
+  - components/LogoMarquee.tsx (logos list)
+  - components/Navigation.tsx (brand logo)
+  - components/SiteFooter.tsx (brand logo)
+- Provide width/height/sizes and alt text; verify paths under /public.
+- Keep decorative icons as aria-hidden or inline SVG where better.
+- Acceptance:
+  - tests/group3-performance-optimization.test.js Task 13 passes
+  - No broken paths; build ok.

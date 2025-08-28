@@ -1,0 +1,7 @@
+Task 07: Orchestrations page (95%)
+- Create app/orchestrations/page.tsx with grid or Embla carousel of playbooks.
+- Each card: outcome, proof shape, tiny next step (deep link to /proof or /book-xray).
+- Motion: hover lift + staggered reveal; GPU-only transforms.
+- Acceptance:
+  - ≥6 cards render; links valid; keyboard accessible.
+  - No layout shift; Lighthouse ≥90 for /orchestrations.

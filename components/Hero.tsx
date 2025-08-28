@@ -6,7 +6,7 @@ import { instrumentSerif } from '@/app/fonts';
 
 export default function Hero() {
   return (
-    <section className="relative isolate overflow-hidden bg-black min-h-[720px] sm:min-h-[820px] md:min-h-[900px]">
+    <section className="relative isolate overflow-hidden bg-black min-h-[695px] sm:min-h-[795px] md:min-h-[875px]">
       <video
         className="absolute inset-0 h-full w-full object-cover z-0"
         src="/videos/hero.mp4"

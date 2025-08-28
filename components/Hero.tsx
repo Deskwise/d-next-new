@@ -5,7 +5,7 @@ import { slideUp, viewportDefaults } from '@/lib/motion';
 
 export default function Hero() {
   return (
-    <section className="relative isolate overflow-hidden bg-black">
+    <section className="relative isolate overflow-hidden bg-black min-h-[640px] sm:min-h-[720px] md:min-h-[800px]">
       <video
         className="absolute inset-0 h-full w-full object-cover z-0"
         src="/videos/hero.mp4"
@@ -21,7 +21,7 @@ export default function Hero() {
       />
 
 
-      <div className="relative mx-auto max-w-7xl px-6 py-28 sm:py-36" style={{ zIndex: 5 }}>
+      <div className="relative mx-auto max-w-7xl px-6 pt-56 pb-24 sm:pt-64 sm:pb-28" style={{ zIndex: 5 }}>
         <motion.div
           variants={slideUp}
           initial="initial"

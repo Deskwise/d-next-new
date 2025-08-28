@@ -28,12 +28,12 @@ body {
 }
 
 .instrument-serif-italic {
-  font-family: 'Instrument Serif', serif !important;
+  font-family: var(--font-instrument-serif), serif !important;
   font-style: italic !important;
 }
 
 .busy-big-italic {
-  font-family: 'Instrument Serif', serif !important;
+  font-family: var(--font-instrument-serif), serif !important;
   font-style: italic !important;
   font-weight: 400 !important;
 }

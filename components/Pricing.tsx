@@ -1,181 +1,195 @@
 'use client';
-import { motion } from 'motion/react';
-import { transforms } from '@/lib/content-mapping';
-import { slideUp, viewportDefaults } from '@/lib/motion';
-import { useState } from 'react';
+import { transforms } from "@/lib/content-mapping";
 
 export default function Pricing() {
-  const [isAnnual, setIsAnnual] = useState(false);
-
   const plans = [
     {
-      name: 'Executive X-Ray',
-      description: 'One-time diagnostic session',
-      price: { monthly: 5000, annual: 5000 },
+      name: "Core",
+      tagline: "Perfect for small teams",
+      price: "≈$250–$400/month",
       features: [
-        'One 90-minute executive session',
-        'Real problem diagnosis',
-        'Decision framework',
-        'Next steps roadmap',
-        '48-hour turnaround'
+        "3 seats",
+        "ThinkWise pipeline",
+        "5 orchestrations/month",
+        "1 microsite",
+        "Basic automations & integrations",
+        "Standard support"
       ],
-      cta: 'Book X-Ray Session',
-      popular: false
+      cta: "Choose Core →"
     },
     {
-      name: 'Proof Sprint',
-      description: 'Working proof in 2-4 weeks',
-      price: { monthly: 15000, annual: 15000 },
+      name: "Growth",
+      tagline: "Best value",
+      price: "≈$800–$1,200/month",
       features: [
-        'Executive X-Ray included',
-        'Working prototype/proof',
-        'Technical documentation',
-        'Deployment guide',
-        'Success metrics defined'
+        "8 seats",
+        "20 orchestrations/month",
+        "3 microsites",
+        "Advanced automations & integrations",
+        "Priority support",
+        "14‑day Growth trial"
       ],
-      cta: 'Start Proof Sprint',
+      cta: "Choose Growth →",
       popular: true
     },
     {
-      name: 'ResearchOps',
-      description: 'Ongoing intelligence retainer',
-      price: { monthly: 8000, annual: 7200 },
+      name: "Scale",
+      tagline: "For large teams",
+      price: "starting ~$2,500/month, custom",
       features: [
-        'Monthly intelligence briefings',
-        'Market signal monitoring',
-        'Competitive analysis',
-        'Expert network access',
-        'Strategic recommendations'
+        "20 seats (expandable)",
+        "100 orchestrations/month",
+        "Unlimited microsites",
+        "API access & SSO",
+        "Premium support & SLA"
       ],
-      cta: 'Start ResearchOps',
-      popular: false
+      cta: "Talk to Sales →"
     }
   ];
 
   return (
-    <section id="plans" className="py-20 bg-surface">
-      <div className="mx-auto max-w-7xl px-6">
-        <motion.div
-          variants={slideUp}
-          initial="initial"
-          whileInView="animate"
-          viewport={viewportDefaults}
-          className="text-center mb-16"
-        >
-          <span className="text-xs font-semibold text-brand uppercase tracking-wide">
-            {transforms.sections.pricing.label}
-          </span>
-          <h2 className="mt-2 text-3xl font-bold text-white sm:text-4xl">
-            {transforms.sections.pricing.title}
+    <section className="py-24 sm:py-32 bg-gray-900">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-2xl text-center">
+          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+            Scale at your pace
           </h2>
-          <p className="mt-4 text-lg text-muted-light max-w-3xl mx-auto">
-            {transforms.sections.pricing.description}
+          <p className="mt-6 text-lg leading-8 text-gray-300">
+            Choose the plan that fits your team. Upgrade anytime, downgrade without losing your work.
           </p>
-        </motion.div>
-
-        <motion.div 
-          variants={slideUp}
-          initial="initial"
-          whileInView="animate"
-          viewport={viewportDefaults}
-          className="flex justify-center mb-12"
-        >
-          <div className="bg-white/5 p-1 rounded-lg border border-white/10">
-            <button
-              onClick={() => setIsAnnual(false)}
-              className={`px-4 py-2 text-sm font-medium rounded-md transition-colors ${
-                !isAnnual 
-                  ? 'bg-brand text-black' 
-                  : 'text-white hover:text-brand'
-              }`}
+          <div className="mt-10 flex items-center justify-center gap-x-6">
+            <a
+              href="/book-xray"
+              className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
             >
-              Monthly
-            </button>
-            <button
-              onClick={() => setIsAnnual(true)}
-              className={`px-4 py-2 text-sm font-medium rounded-md transition-colors ${
-                isAnnual 
-                  ? 'bg-brand text-black' 
-                  : 'text-white hover:text-brand'
-              }`}
-            >
-              Annual (Save 10%)
-            </button>
+              Start With a Friction X‑Ray →
+            </a>
           </div>
-        </motion.div>
-        
-        <motion.div 
-          className="grid grid-cols-1 md:grid-cols-3 gap-8"
-          initial="initial"
-          whileInView="animate"
-          viewport={viewportDefaults}
-          variants={{
-            initial: {},
-            animate: {
-              transition: {
-                staggerChildren: 0.1
-              }
-            }
-          }}
-        >
-          {plans.map((plan) => (
-            <motion.div
-              key={plan.name}
-              variants={slideUp}
-              className={`relative rounded-2xl p-8 ${
-                plan.popular 
-                  ? 'bg-brand/10 border-2 border-brand' 
-                  : 'bg-white/5 border border-white/10'
-              } hover:bg-white/10 transition-colors`}
-            >
-              {plan.popular && (
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                  <span className="bg-brand text-black px-3 py-1 text-xs font-semibold rounded-full">
+        </div>
+        <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+            {plans.map((plan, index) => (
+              <div
+                key={index}
+                className={`relative rounded-3xl p-8 ring-1 ring-gray-700 ${
+                  plan.popular ? 'bg-white text-gray-900' : 'bg-gray-800 text-white'
+                }`}
+              >
+                {plan.popular && (
+                  <div className="absolute -top-5 left-0 right-0 mx-auto w-32 rounded-full bg-gradient-to-r from-indigo-500 to-purple-600 px-3 py-2 text-sm font-medium text-white text-center">
                     Most Popular
-                  </span>
+                  </div>
+                )}
+                <div className="text-center">
+                  <h3 className={`text-lg font-semibold leading-8 ${plan.popular ? 'text-gray-900' : 'text-white'}`}>
+                    {plan.name}
+                  </h3>
+                  <p className={`mt-4 text-sm leading-6 ${plan.popular ? 'text-gray-600' : 'text-gray-300'}`}>
+                    {plan.tagline}
+                  </p>
+                  <p className={`mt-6 flex items-baseline justify-center gap-x-1 ${plan.popular ? 'text-gray-900' : 'text-white'}`}>
+                    <span className="text-4xl font-bold tracking-tight">{plan.price}</span>
+                  </p>
+                  <a
+                    href={plan.name === "Scale" ? "/contact" : "/book-xray"}
+                    className={`mt-6 block rounded-md px-3 py-2 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ${
+                      plan.popular
+                        ? 'bg-gray-900 text-white hover:bg-gray-700 focus-visible:outline-gray-900'
+                        : 'bg-white text-gray-900 hover:bg-gray-100 focus-visible:outline-white'
+                    }`}
+                  >
+                    {plan.cta}
+                  </a>
                 </div>
-              )}
-              
-              <div className="text-center mb-8">
-                <h3 className="text-xl font-semibold text-white mb-2">
-                  {plan.name}
-                </h3>
-                <p className="text-muted-light text-sm mb-4">
-                  {plan.description}
-                </p>
-                <div className="mb-4">
-                  <span className="text-3xl font-bold text-white">
-                    ${isAnnual ? plan.price.annual.toLocaleString() : plan.price.monthly.toLocaleString()}
-                  </span>
-                  {plan.name === 'ResearchOps' && (
-                    <span className="text-muted-light">
-                      {isAnnual ? '/year' : '/month'}
-                    </span>
-                  )}
-                </div>
+                <ul className={`mt-8 space-y-3 text-sm leading-6 ${plan.popular ? 'text-gray-600' : 'text-gray-300'}`}>
+                  {plan.features.map((feature, featureIndex) => (
+                    <li key={featureIndex} className="flex gap-x-3">
+                      <svg
+                        className={`h-6 w-5 flex-none ${plan.popular ? 'text-gray-900' : 'text-white'}`}
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
               </div>
-              
-              <ul className="space-y-3 mb-8">
-                {plan.features.map((feature) => (
-                  <li key={feature} className="flex items-start">
-                    <svg className="w-5 h-5 text-brand mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                    <span className="text-muted-light text-sm">{feature}</span>
-                  </li>
-                ))}
-              </ul>
-              
-              <button className={`w-full py-3 px-6 rounded-lg font-medium transition-colors ${
-                plan.popular
-                  ? 'bg-brand text-black hover:bg-brand/90'
-                  : 'bg-white/10 text-white border border-white/25 hover:bg-white/20'
-              }`}>
-                {plan.cta}
-              </button>
-            </motion.div>
-          ))}
-        </motion.div>
+            ))}
+          </div>
+        </div>
+
+        {/* Usage & Add-Ons Section */}
+        <div className="mx-auto mt-16 max-w-2xl text-center">
+          <h3 className="text-2xl font-bold tracking-tight text-white sm:text-3xl mb-8">
+            Usage & Add‑Ons
+          </h3>
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+            <div className="text-center">
+              <h4 className="text-lg font-semibold text-white mb-4">Additional orchestrations</h4>
+              <p className="text-gray-300 text-sm">
+                Buy extra runs in packs (e.g., 5 runs for $100). Align cost with value and let businesses scale at will.
+              </p>
+            </div>
+            <div className="text-center">
+              <h4 className="text-lg font-semibold text-white mb-4">AI compute credits</h4>
+              <p className="text-gray-300 text-sm">
+                Purchase credit packs (e.g., 1,000 credits for $100) for heavy tasks. Credits create an abstraction between usage and outcomes.
+              </p>
+            </div>
+            <div className="text-center">
+              <h4 className="text-lg font-semibold text-white mb-4">Outcome‑based pilots</h4>
+              <p className="text-gray-300 text-sm">
+                For high‑stakes projects, pay a base fee plus a success fee tied to agreed outcomes.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Accelerators Section */}
+        <div className="mx-auto mt-16 max-w-2xl text-center">
+          <h3 className="text-2xl font-bold tracking-tight text-white sm:text-3xl mb-8">
+            Accelerators
+          </h3>
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+            <div className="bg-gray-800 rounded-lg p-6">
+              <h4 className="text-lg font-semibold text-white mb-4">Friction X‑Ray (Free)</h4>
+              <p className="text-gray-300 text-sm">
+                A complimentary diagnostic that surfaces your biggest ghost work hotspots and outlines your path from busy to big.
+              </p>
+            </div>
+            <div className="bg-gray-800 rounded-lg p-6">
+              <h4 className="text-lg font-semibold text-white mb-4">Proof Sprint ($999–$2,500)</h4>
+              <p className="text-gray-300 text-sm">
+                A 48‑hour proof run; if we can't deliver a usable result, your sprint is free.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* CTA Block */}
+        <div className="mx-auto mt-16 max-w-2xl text-center">
+          <div className="flex items-center justify-center gap-x-6">
+            <a
+              href="/pricing"
+              className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+            >
+              Choose Your Plan →
+            </a>
+            <a
+              href="/contact"
+              className="text-sm font-semibold leading-6 text-white"
+            >
+              Need help deciding? Book a call →
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );

@@ -6,7 +6,9 @@
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "b": "node behavior-activate.js",
+    "behavior": "node behavior-activate.js"
   },
   "dependencies": {
     "@openai/codex": "^0.25.0",

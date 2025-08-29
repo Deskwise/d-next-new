@@ -21,10 +21,26 @@
   --font-mono: var(--font-geist-mono);
 }
 
+/* Force site background to match header’s deep dark tone */
+:root {
+  --color-bg: var(--color-dark);
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "liga" 1, "kern" 1;
+}
+
 body {
-  background: var(--color-bg);
+  background: var(--color-dark);
   color: var(--color-text);
   font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "liga" 1, "kern" 1;
 }
 
 .instrument-serif-italic {

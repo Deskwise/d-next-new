@@ -26,7 +26,7 @@ describe('Group 4: Final Validation', () => {
       const componentPath = path.join(componentsDir, component);
       if (fs.existsSync(componentPath)) {
         const content = fs.readFileSync(componentPath, 'utf8');
-        expect(content).toContain('motion') || expect(content).toContain('animate-');
+        expect(content.includes('motion') || content.includes('animate-')).toBe(true);
       }
     });
     

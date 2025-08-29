@@ -21,6 +21,7 @@ export default {
         sans: ["var(--font-sans)", "Inter", "sans-serif"],
         serif: ["var(--font-serif)", "Instrument Serif", "serif"],
         display: ["var(--font-display)", "Inter", "sans-serif"],
+        inter: ["var(--font-inter)", "Inter", "sans-serif"],
         "instrument-serif": ["var(--font-instrument-serif)", "Instrument Serif", "serif"],
       },
       spacing: {

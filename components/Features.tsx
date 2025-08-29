@@ -7,23 +7,23 @@ import Image from 'next/image';
 export default function Features() {
   const features = [
     {
-      title: 'Real-Time Intelligence',
-      description: 'Live market signals and competitive intelligence delivered to your decision-making process.',
+      title: 'Invisible Engine',
+      description: 'Your background crew that handles orchestrations, automations and microsites behind the scenes.',
       image: '/images/46yWpjkwWiKJojGTr2NKnNPtJ1c.jpg'
     },
     {
-      title: 'Measurable Impact', 
-      description: 'Track ROI with clear metrics and performance indicators that matter to your business.',
+      title: 'Orchestrations Library', 
+      description: 'One‑click playbooks that turn common pains into proofs in ≤ 48 hours.',
       image: '/images/G1bC6MQnKLl8c7ZyjwpJlVGuw.jpg'
     },
     {
-      title: 'Production-Grade Delivery',
-      description: 'Enterprise-ready solutions that integrate seamlessly with your existing infrastructure.',
+      title: 'Proof Sprint',
+      description: 'A 48‑hour sprint that guarantees a proof — or you don’t pay.',
       image: '/images/W7xYkGKzPzvnPv58ZBNzxS3JZI.jpg'
     },
     {
-      title: 'Expert Network',
-      description: 'Access to ten specialized lenses: technical, market, legal, financial, and operational expertise.',
+      title: 'Friction X‑Ray',
+      description: 'A complimentary diagnostic revealing ghost work hotspots and your path from busy to big.',
       image: '/images/YGV3hSM1KkFRZxZ0JDeOT7ry7u4.jpg'
     }
   ];

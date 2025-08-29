@@ -7,18 +7,23 @@ export default function ValueProps() {
   const benefits = [
     {
       icon: '/icons/04vJJZ3D2ponPv6rzLBq6sf2PZU.svg',
-      title: 'Executive X-Ray',
-      description: 'Diagnose the real decision behind the stated problem in one conversation.'
+      title: 'Immediate relief',
+      description: 'Reclaim hours in week one.'
     },
     {
       icon: '/icons/1ph1389RD4RtUDEfqVhWbujyF7s.svg', 
-      title: 'Proof Sprint',
-      description: 'Ship a working proof you can deploy, not another strategy deck.'
+      title: 'Enablement',
+      description: 'One person performs like an elite team.'
     },
     {
       icon: '/icons/5BVUI56YoqDFZ1xvzbir5lf9sZA.svg',
-      title: 'ResearchOps',
-      description: 'Ongoing intelligence gathering with ten expert lenses on your market.'
+      title: 'Proof‑first',
+      description: 'Reversible steps with measurable before/after results.'
+    },
+    {
+      icon: '/icons/Yn3MOOL9rTXhK9U8MLvSnEoNP8.svg',
+      title: 'Drafts, not surprises',
+      description: 'Fast, visible iterations.'
     }
   ];
 

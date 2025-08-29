@@ -38,7 +38,7 @@ export const contentMappings: ContentMapping[] = [
   // Fix accidental collisions
   { from: /Advanced AI Assistant WHAT'S UNDER THE HOOD/gi, to: 'Advanced AI Assistant Features', context: 'feature-title' },
   
-  // Email normalization (updated to Archy)
+  // Email normalization (updated to Deskwise)
   { from: /landio@support\.com/gi, to: 'info@deskwise.com', context: 'contact-email' },
   { from: /mailto:landio@support\.com/gi, to: 'mailto:info@deskwise.com', context: 'contact-link' },
   { from: /\[email\s*&#160;protected\]/gi, to: 'info@deskwise.com', context: 'obfuscated-email' },
@@ -75,19 +75,20 @@ export const transforms = {
   },
   
   hero: {
-    title: 'From Busy to Big',
-    subtitle: 'Listening-First Decision Lab. We diagnose the real question, then ship proof you can deploy.',
-    cta: 'Book A Free Call'
+    title: 'Elite Consultants, Better Decisions—Fast',
+    subtitle: 'Your team of elite consultants, working 24/7. McKinsey‑level fact basis to aid critical decision‑making.',
+    cta: 'Book Your Free Friction X‑Ray',
+    ctaSecondary: 'See Plans'
   },
   
   sections: {
     benefits: {
-      label: 'WHY WE\'RE DIFFERENT',
-      title: 'Why We\'re Different'
+      label: 'WHY GHOST WORK COSTS YOU',
+      title: 'Ghost work drains productivity and limits growth'
     },
     services: {
-      label: 'THE METHOD',
-      title: 'The Method (Listen→Proof™)'
+      label: 'HOW IT WORKS',
+      title: 'A pipeline built for results'
     },
     features: {
       label: 'WHAT\'S UNDER THE HOOD',

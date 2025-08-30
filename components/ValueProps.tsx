@@ -46,7 +46,7 @@ export default function ValueProps() {
         </motion.div>
         
         <motion.div 
-          className="grid grid-cols-1 md:grid-cols-3 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto"
           initial="initial"
           whileInView="animate"
           viewport={viewportDefaults}
@@ -59,11 +59,15 @@ export default function ValueProps() {
             }
           }}
         >
-          {benefits.map((benefit) => (
+          {benefits.map((benefit, index) => (
             <motion.div
               key={benefit.title}
               variants={slideUp}
-              className="text-center p-8 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors"
+              className={`text-center p-8 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors ${
+                benefits.length % 2 !== 0 && index === benefits.length - 1 
+                  ? 'md:col-span-2 md:max-w-md md:mx-auto' 
+                  : ''
+              }`}
             >
               <div className="w-12 h-12 mx-auto mb-4 flex items-center justify-center">
                 <img src={benefit.icon} alt="" className="w-8 h-8 text-brand" />

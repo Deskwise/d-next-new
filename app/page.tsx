@@ -20,7 +20,52 @@ export default function Home() {
       <Navigation />
       <Hero />
       <ValueProps />
-      
+
+      {/* Why Deskwise Section */}
+      <section className="py-24 sm:py-32 bg-dark">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-3xl text-center">
+            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+              Why Deskwise?
+            </h2>
+            <p className="mt-6 text-xl leading-8 text-gray-300">
+              Transform ghost work into proof‑driven progress and reclaim your time.
+            </p>
+            <div className="mt-12 text-left">
+              <div className="space-y-8 text-lg leading-8 text-gray-300">
+                <p>
+                  <strong className="text-white">Eliminate ghost work:</strong> Deskwise frees your team from repetitive tasks, document chaos and decision paralysis. You focus on what matters—strategy and growth.
+                </p>
+                <p>
+                  <strong className="text-white">Proof‑first pipeline:</strong> Our five‑phase ThinkWise process (Listen, Diagnose, Prove, Validate, Scale) delivers reversible, measurable results. Every step produces a versioned artifact you can trust.
+                </p>
+                <p>
+                  <strong className="text-white">Invisible Engine:</strong> Automated orchestrations, microsites and demos work in the background like a silent operations crew—letting one person perform like an elite team.
+                </p>
+                <p>
+                  <strong className="text-white">Expert oversight:</strong> Cross‑functional teams of specialized experts review and validate each deliverable, bringing market, product, data, engineering and legal expertise to your decisions.
+                </p>
+                <p>
+                  <strong className="text-white">Rapid ROI:</strong> Early customers saved 12+ hours per week and accelerated decision cycles 3×. We guarantee a working proof or your money back.
+                </p>
+                <p>
+                  <strong className="text-white">Predictable pricing:</strong> Transparent tiers with flexible usage add‑ons ensure you pay only for the value you capture—no hidden fees.
+                </p>
+              </div>
+            </div>
+            <div className="mt-12 flex items-center justify-center gap-x-6">
+              <a
+                href="/book-xray"
+                className="rounded-xl px-6 py-3 text-sm font-medium text-white border border-white/20 hover:bg-white/10 hover:border-white/40 transition-all backdrop-blur-[20px]"
+                style={{ background: 'rgba(4,7,13,0.8)' }}
+              >
+                Book Your Free Friction X‑Ray →
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* How Deskwise Works Section */}
       <section className="py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">

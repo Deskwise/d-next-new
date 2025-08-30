@@ -19,7 +19,7 @@ const quintessential = Quintessential({
 });
 
 const HEADLINE_TITLES = [
-  'Elite Consultants, Better Decisions—Fast',
+  'Your Elite team of Consultants with a 148 IQ Working 24/7',
   'Fix the Question. Ship the Proof.',
   'Listening‑First Decision Lab'
 ];
@@ -97,7 +97,7 @@ export default function Hero() {
             ease: 'power2.out',
           })
           .to(quote, {
-            delay: 0.5,
+            delay: 2.5,
             duration: 1,
             ...(Scramble ? { scrambleText: { text: '', chars: scrambleChars } } : {}),
             opacity: 0,
@@ -106,7 +106,7 @@ export default function Hero() {
       };
 
       quotes.forEach((q) => {
-        gsap.set(q, { position: 'absolute', opacity: 0, whiteSpace: 'nowrap', fontSize: '12px', color: 'rgba(255,255,255,0.35)' });
+        gsap.set(q, { position: 'absolute', opacity: 0, whiteSpace: 'nowrap', fontSize: '16px', color: 'rgba(255,255,255,0.35)' });
         scrambleQuote(q, q.textContent ?? '');
       });
     };
@@ -127,7 +127,6 @@ export default function Hero() {
         preload="auto"
         style={{
           filter: `brightness(49%) contrast(104%) saturate(18%) hue-rotate(-114deg)`,
-          clipPath: 'inset(0 0 125px 0)',
           objectPosition: 'top',
         }}
       />
@@ -159,8 +158,8 @@ export default function Hero() {
               <img
                 src="/images/owl_icon.png"
                 alt="Deskwise Owl"
-                className="h-6 w-6 opacity-90"
-                style={{ filter: 'drop-shadow(0 0 4px rgba(166, 218, 255, 0.9)) drop-shadow(0 0 8px rgba(166, 218, 255, 0.7)) drop-shadow(0 0 12px rgba(166, 218, 255, 0.5))' }}
+                className="h-8 w-8 opacity-90"
+                style={{ filter: 'drop-shadow(0 0 2px rgba(166, 218, 255, 1.0)) drop-shadow(0 0 6px rgba(166, 218, 255, 0.6)) drop-shadow(0 0 10px rgba(166, 218, 255, 0.3))', stroke: 'rgba(166, 218, 255, 0.8)', strokeWidth: '1px' }}
               />
             </div>
             {/* Kicker */}
@@ -202,15 +201,15 @@ export default function Hero() {
             <div className="mt-8 flex justify-center gap-3">
               <a
                 href="#contact"
-                className="rounded-xl px-5 py-3 text-sm font-medium text-white border-2 border-white/80 hover:bg-white/10 hover:border-white transition-all"
-                style={{ background: 'transparent' }}
+                className="rounded-xl px-5 py-3 text-sm font-medium text-white border border-white/20 hover:bg-white/10 hover:border-white/40 transition-all backdrop-blur-[20px]"
+                style={{ background: 'rgba(4,7,13,0.15)' }}
               >
                 {transforms.hero.cta}
               </a>
               <a
                 href="#proof"
-                className="rounded-xl px-5 py-3 text-sm font-medium text-white border-2 border-white/80 hover:bg-white/10 hover:border-white transition-all"
-                style={{ background: 'transparent' }}
+                className="rounded-xl px-5 py-3 text-sm font-medium text-white border border-white/20 hover:bg-white/10 hover:border-white/40 transition-all backdrop-blur-[20px]"
+                style={{ background: 'rgba(4,7,13,0.15)' }}
               >
                 See Proof
               </a>

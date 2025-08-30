@@ -1,68 +1,107 @@
 :root {
-/* black */
---black-100: #000;
---black-200: #000000;
---black-300: #04070d;
---black-400: rgb(4,7,13);
---black-500: rgb(16,19,28);
---black-600: rgb(0,0,0);
---black-700: rgba(8,9,10,.75);
---black-800: rgba(0,0,0,.8);
---black-900: rgba(0,0,0,0);
---black-1000: rgba(4,7,13,0);
-/* white */
---white-100: #ffffff;
---white-200: rgb(255,255,255);
---white-300: rgba(255,255,255,.07);
---white-400: rgba(255,255,255,.6);
---white-500: rgba(255,255,255,0);
---white-600: #fff;
---white-700: rgba(255,255,255,0.15);
---white-800: rgba(255,255,255,0.07);
---white-900: rgba(255,255,255,0.6);
---white-1000: rgba(255,255,255,0.05);
-/* dodgerblue */
---dodgerblue-100: #0099ff;
---dodgerblue-200: rgb(0,153,255);
-/* gainsboro */
---gainsboro-100: rgb(213,219,230);
---gainsboro-200: rgba(213,219,230,.7);
---gainsboro-300: #d5dbe6;
-/* lightskyblue */
---lightskyblue-100: rgb(166,218,255);
---lightskyblue-200: rgb(148,209,255);
---lightskyblue-300: rgba(168,209,255,0.5);
-/* aliceblue */
---aliceblue-100: rgba(216,231,242,.07);
---aliceblue-200: rgb(228,233,242);
---aliceblue-300: rgba(216,231,242,0.07);
-/* lightsteelblue */
---lightsteelblue-100: rgba(184,199,217,.5);
---lightsteelblue-200: rgba(184,199,217,0.5);
-/* steelblue */
---steelblue-100: rgba(64,120,168,0.37);
---steelblue-200: rgba(64,120,168,0.36);
---steelblue-300: rgba(64,120,168,0.34);
---steelblue-400: rgba(64,120,168,0.31);
---steelblue-500: rgba(64,120,168,0.247);
---steelblue-600: rgba(64,120,168,0.094);
---steelblue-700: rgba(87,133,179,0.48);
---steelblue-800: rgba(87,133,179,0.455);
---steelblue-900: rgba(87,133,179,0.4);
---steelblue-1000: rgba(87,133,179,0.21);
-/* firebrick */
---firebrick-100: rgba(204,8,8,0);
-/* Homepage Colors */
---black: rgb(7, 9, 15);
---silver: rgb(185, 188, 194);
---dimgray: rgb(91, 93, 100);
---black: rgb(39, 41, 49);
---gray: rgb(124, 132, 136);
---black: rgb(28, 36, 36);
---gray: rgb(132, 132, 132);
---black: rgb(36, 35, 36);
---darkslategray: rgb(68, 67, 68);
---darkslategray: rgb(60, 68, 68);
---slategray: rgb(124, 124, 140);
---gray: rgb(132, 124, 124);
+  /* ===== CORE BRAND COLORS ===== */
+  
+  /* Primary Brand Blue */
+  --brand-primary: #A6DAFF;      /* rgb(166, 218, 255) - Main accent */
+  --brand-primary-light: #94D1FF; /* rgb(148, 209, 255) - Lighter variant */
+  --brand-primary-dark: #0099FF;  /* rgb(0, 153, 255) - Darker variant */
+  
+  /* Neutral Grays */
+  --neutral-100: #FFFFFF;        /* Pure white */
+  --neutral-200: #E4E9F2;        /* Light gray - hero text */
+  --neutral-300: #D5DBE6;        /* Medium light gray - body text */
+  --neutral-400: #9CA3AF;        /* Medium gray - muted text */
+  --neutral-500: #6B7280;        /* Medium dark gray */
+  --neutral-600: #4B5563;        /* Dark gray */
+  --neutral-700: #374151;        /* Darker gray */
+  --neutral-800: #1F2937;        /* Very dark gray - cards */
+  --neutral-900: #111827;        /* Almost black - sections */
+  --neutral-950: #04070D;        /* Pure black - main background */
+  
+  /* ===== SEMANTIC COLORS ===== */
+  
+  /* Background Colors */
+  --bg-primary: var(--neutral-950);     /* Main background */
+  --bg-secondary: var(--neutral-900);   /* Section backgrounds */
+  --bg-tertiary: var(--neutral-800);    /* Card backgrounds */
+  --bg-overlay: rgba(4, 7, 13, 0.8);   /* Modal overlays */
+  
+  /* Text Colors */
+  --text-primary: var(--neutral-100);   /* Primary text */
+  --text-secondary: var(--neutral-300); /* Secondary text */
+  --text-muted: var(--neutral-400);     /* Muted text */
+  --text-accent: var(--brand-primary);  /* Accent text */
+  
+  /* Border Colors */
+  --border-primary: rgba(184, 199, 217, 0.5);    /* Primary borders */
+  --border-secondary: rgba(255, 255, 255, 0.1);  /* Secondary borders */
+  --border-accent: var(--brand-primary);         /* Accent borders */
+  
+  /* ===== INTERACTIVE COLORS ===== */
+  
+  /* Button Colors */
+  --btn-primary-bg: var(--brand-primary);
+  --btn-primary-text: var(--neutral-950);
+  --btn-primary-hover: var(--brand-primary-light);
+  
+  --btn-secondary-bg: rgba(4, 7, 13, 0.8);
+  --btn-secondary-text: var(--neutral-100);
+  --btn-secondary-hover: rgba(4, 7, 13, 0.9);
+  
+  --btn-ghost-bg: transparent;
+  --btn-ghost-text: var(--neutral-100);
+  --btn-ghost-hover: rgba(255, 255, 255, 0.1);
+  
+  /* Focus States */
+  --focus-ring: #6366F1;         /* Indigo for focus */
+  --focus-ring-light: var(--brand-primary);
+  
+  /* ===== STATUS COLORS ===== */
+  
+  /* Success */
+  --success-100: #D1FAE5;
+  --success-500: #10B981;
+  --success-900: #064E3B;
+  
+  /* Warning */
+  --warning-100: #FEF3C7;
+  --warning-500: #F59E0B;
+  --warning-900: #78350F;
+  
+  /* Error */
+  --error-100: #FEE2E2;
+  --error-500: #EF4444;
+  --error-900: #7F1D1D;
+  
+  /* ===== EFFECTS ===== */
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  --shadow-accent: 0 8px 24px rgba(166, 218, 255, 0.35);
+  
+  /* Glows */
+  --glow-primary: 0 0 20px rgba(166, 218, 255, 0.5);
+  --glow-accent: 0 0 40px rgba(166, 218, 255, 0.3);
+  
+  /* ===== TRANSPARENCY ===== */
+  
+  /* Common Opacity Values */
+  --opacity-10: 0.1;
+  --opacity-20: 0.2;
+  --opacity-30: 0.3;
+  --opacity-40: 0.4;
+  --opacity-50: 0.5;
+  --opacity-60: 0.6;
+  --opacity-70: 0.7;
+  --opacity-80: 0.8;
+  --opacity-90: 0.9;
+  
+  /* ===== GRADIENTS ===== */
+  
+  --gradient-primary: linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-primary-light) 100%);
+  --gradient-dark: linear-gradient(135deg, var(--neutral-900) 0%, var(--neutral-950) 100%);
+  --gradient-overlay: linear-gradient(180deg, transparent 0%, var(--neutral-950) 100%);
 }

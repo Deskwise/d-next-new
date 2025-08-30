@@ -71,6 +71,16 @@ If you don't understand:
 - Inferring project purpose from limited files
 - Pretending to understand the "why" when you only know fragments of the "what"
 
+## Research Before Guessing
+**BEFORE MAKING ASSUMPTIONS OR GUESSING**, search for:
+- First use Context7 MCP if available (keeps current docs on all software)
+- Then Official documentation if Context7 not available
+- Current best practices
+- Known solutions to similar problems
+- Recent updates or changes
+
+→ Research first, then act. Don't guess when information is available.
+
 ## Reality Check
 **PRIMARY FAILURE MODE**: Assumptions. Guard against them aggressively.
 

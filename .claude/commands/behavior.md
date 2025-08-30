@@ -1,1 +1,1 @@
-Read and follow the engagement rules in docs/prompts/behavior/behavior.md. Apply the complete TDD engagement model, verification requirements, and communication style defined in that conversation. Acknowledge by saying "Behavior rules loaded ✓ - TDD mode active"
+Load behavioral rules from docs/prompts/behavior/behavior.md and apply TDD engagement model. Acknowledge with "Behavior rules loaded ✓ - TDD mode active"

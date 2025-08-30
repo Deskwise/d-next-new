@@ -34,7 +34,8 @@ export default function Home() {
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="/thinkwise"
-                className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                className="rounded-xl px-5 py-3 text-sm font-medium text-white border border-white/20 hover:bg-white/10 hover:border-white/40 transition-all backdrop-blur-[20px]"
+                style={{ background: 'rgba(4,7,13,0.8)' }}
               >
                 Dive into ThinkWise →
               </a>
@@ -96,7 +97,8 @@ export default function Home() {
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <a
               href="/book-xray"
-              className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              className="rounded-xl px-5 py-3 text-sm font-medium text-white border border-white/20 hover:bg-white/10 hover:border-white/40 transition-all backdrop-blur-[20px]"
+              style={{ background: 'rgba(4,7,13,0.8)' }}
             >
               Book Your Free Friction X‑Ray →
             </a>
@@ -129,7 +131,8 @@ export default function Home() {
               />
               <button
                 type="submit"
-                className="flex-none rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                className="flex-none rounded-xl px-5 py-3 text-sm font-medium text-white border border-white/20 hover:bg-white/10 hover:border-white/40 transition-all backdrop-blur-[20px]"
+                style={{ background: 'rgba(4,7,13,0.8)' }}
               >
                 Subscribe
               </button>

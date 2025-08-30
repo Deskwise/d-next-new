@@ -1,13 +1,10 @@
 'use client';
-import { useState, useEffect, useRef } from 'react';
+import { useState } from 'react';
 import { motion } from 'motion/react';
 import { slideUp, viewportDefaults } from '@/lib/motion';
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeTab, setActiveTab] = useState(0);
-  const [selectorStyle, setSelectorStyle] = useState({});
-  const navRef = useRef<HTMLDivElement>(null);
 
   const navigation = [
     { name: 'Home', href: '/' },
@@ -17,25 +14,6 @@ export default function Navigation() {
     { name: 'Proof', href: '/proof' },
     { name: 'Pricing', href: '/pricing' },
   ];
-
-  useEffect(() => {
-    const updateSelector = () => {
-      if (navRef.current) {
-        const activeItem = navRef.current.children[activeTab] as HTMLElement;
-        if (activeItem) {
-          const { offsetLeft, offsetWidth } = activeItem;
-          setSelectorStyle({
-            left: `${offsetLeft}px`,
-            width: `${offsetWidth}px`,
-          });
-        }
-      }
-    };
-
-    updateSelector();
-    window.addEventListener('resize', updateSelector);
-    return () => window.removeEventListener('resize', updateSelector);
-  }, [activeTab]);
 
   return (
     <motion.nav
@@ -53,51 +31,25 @@ export default function Navigation() {
                              <img
                  src="/images/Deskwise_logo.svg"
                  alt="Deskwise logo"
-                 className="h-5 w-auto"
-                 style={{
-                   filter: 'drop-shadow(0 0 4px rgba(166, 218, 255, 0.9)) drop-shadow(0 0 8px rgba(166, 218, 255, 0.7)) drop-shadow(0 0 12px rgba(166, 218, 255, 0.5))'
-                 }}
+                 className="h-6 w-auto"
+                                   style={{
+                    filter: 'drop-shadow(0 0 2px rgba(166, 218, 255, 1.0)) drop-shadow(0 0 6px rgba(166, 218, 255, 0.6)) drop-shadow(0 0 10px rgba(166, 218, 255, 0.3))',
+                    stroke: 'rgba(166, 218, 255, 0.8)',
+                    strokeWidth: '1px'
+                  }}
                />
             </a>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
-            <div className="ml-10 relative">
-              <div 
-                ref={navRef}
-                className="flex items-baseline relative"
-                style={{ padding: '10px 0' }}
-              >
-                {/* Animated Selector */}
-                <div
-                  className="absolute top-0 h-full bg-[#04070C] border-2 border-[#a6daff] rounded-t-[15px] border-b-0"
-                  style={{
-                    ...selectorStyle,
-                    marginTop: '10px',
-                    transition: 'left 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55), width 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55)'
-                  }}
-                >
-                  {/* Left curve - inward */}
-                  <div className="absolute -left-[25px] bottom-0 w-[25px] h-[25px] bg-[rgba(4,7,13,0.8)]">
-                    <div className="absolute bottom-0 right-0 w-[25px] h-[25px] rounded-full shadow-[25px_25px_0_0_#04070C] border-r-2 border-b-2 border-[#a6daff]"></div>
-                  </div>
-                  {/* Right curve - inward */}
-                  <div className="absolute -right-[25px] bottom-0 w-[25px] h-[25px] bg-[rgba(4,7,13,0.8)]">
-                    <div className="absolute bottom-0 left-0 w-[25px] h-[25px] rounded-full shadow-[-25px_25px_0_0_#04070C] border-l-2 border-b-2 border-[#a6daff]"></div>
-                  </div>
-                </div>
-
-                {/* Navigation Items */}
-                {navigation.map((item, index) => (
+            <div className="ml-10 flex items-center">
+              <div className="flex items-center space-x-1 px-3 py-1.5 rounded-full border border-white/50 bg-transparent">
+                {navigation.map((item) => (
                   <a
                     key={item.name}
                     href={item.href}
-                    className={`relative z-10 px-5 py-4 text-sm font-medium transition-all duration-300 ${
-                      index === activeTab ? 'text-white' : 'text-white/50 hover:text-white'
-                    }`}
-                    onMouseEnter={() => setActiveTab(index)}
-                    onClick={() => setActiveTab(index)}
+                    className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-xs font-medium transition-colors"
                   >
                     {item.name}
                   </a>
@@ -108,13 +60,13 @@ export default function Navigation() {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <a
-              href="/book-xray"
-              className="rounded-md px-3.5 py-2.5 text-sm font-semibold text-white shadow-glow focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-              style={{ background: 'var(--gradient-button)' }}
-            >
-              Book Free X‑Ray →
-            </a>
+                                                   <a
+                href="/book-xray"
+                                                               className="rounded-xl px-5 py-3 text-sm font-medium text-white border border-white/20 hover:bg-white/10 hover:border-white/40 transition-all"
+               style={{ background: 'rgba(4,7,13,0.8)' }}
+              >
+                Book Free X‑Ray →
+              </a>
           </div>
 
           {/* Mobile menu button */}
@@ -153,14 +105,14 @@ export default function Navigation() {
               </a>
             ))}
             <div className="pt-4">
-              <a
-                href="/book-xray"
-                className="block w-full text-center rounded-md px-3.5 py-2.5 text-sm font-semibold text-white shadow-glow"
-                style={{ background: 'var(--gradient-button)' }}
-                onClick={() => setIsOpen(false)}
-              >
-                Book Free X‑Ray →
-              </a>
+                                                           <a
+                  href="/book-xray"
+                                     className="block w-full text-center rounded-xl px-5 py-3 text-sm font-medium text-white border border-white/20 hover:bg-white/10 hover:border-white/40 transition-all"
+                   style={{ background: 'rgba(4,7,13,0.8)' }}
+                  onClick={() => setIsOpen(false)}
+                >
+                  Book Free X‑Ray →
+                </a>
             </div>
           </div>
         </div>

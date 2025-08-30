@@ -36,7 +36,7 @@ export default function InvisibleEnginePage() {
               Install the Background Crew
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-              The Invisible Engine orchestrates tasks behind the scenes so you don't have to. It listens, coordinates, and implements — quietly powering your workflows and automations without interrupting you.
+              The Invisible Engine orchestrates tasks behind the scenes so you don&apos;t have to. It listens, coordinates, and implements — quietly powering your workflows and automations without interrupting you.
             </p>
           </div>
         </div>

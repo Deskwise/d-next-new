@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import Link from 'next/link';
 import { motion } from 'motion/react';
 import { slideUp, viewportDefaults } from '@/lib/motion';
 
@@ -27,7 +28,7 @@ export default function Navigation() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
-            <a href="/" className="flex items-center">
+            <Link href="/" className="flex items-center">
                              <img
                  src="/images/Deskwise_logo.svg"
                  alt="Deskwise logo"
@@ -38,7 +39,7 @@ export default function Navigation() {
                     strokeWidth: '1px'
                   }}
                />
-            </a>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
@@ -46,13 +47,13 @@ export default function Navigation() {
             <div className="ml-10 flex items-center">
               <div className="flex items-center space-x-1 px-3 py-1.5 rounded-full border border-white/50 bg-transparent">
                 {navigation.map((item) => (
-                  <a
+                  <Link
                     key={item.name}
                     href={item.href}
                     className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-xs font-medium transition-colors"
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>
@@ -60,13 +61,13 @@ export default function Navigation() {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-                                                   <a
+                                                   <Link
                 href="/book-xray"
                                                                className="rounded-xl px-5 py-3 text-sm font-medium text-white border border-white/20 hover:bg-white/10 hover:border-white/40 transition-all"
                style={{ background: 'rgba(4,7,13,0.8)' }}
               >
                 Book Free X‑Ray →
-              </a>
+              </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -95,24 +96,24 @@ export default function Navigation() {
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-[rgba(4,7,13,0.95)] backdrop-blur-[20px]">
             {navigation.map((item) => (
-              <a
+              <Link
                 key={item.name}
                 href={item.href}
                 className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
             <div className="pt-4">
-                                                           <a
+                                                           <Link
                   href="/book-xray"
                                      className="block w-full text-center rounded-xl px-5 py-3 text-sm font-medium text-white border border-white/20 hover:bg-white/10 hover:border-white/40 transition-all"
                    style={{ background: 'rgba(4,7,13,0.8)' }}
                   onClick={() => setIsOpen(false)}
                 >
                   Book Free X‑Ray →
-                </a>
+                </Link>
             </div>
           </div>
         </div>

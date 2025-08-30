@@ -25,11 +25,11 @@ export default function BookXRayPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl mb-8">
-              What's Included
+              What&apos;s Included
             </h2>
             <div className="text-left space-y-6 text-lg leading-8 text-gray-300">
               <p>
-                The Friction X‑Ray includes a brief assessment of your workflows, a summary of your ghost work hotspots, and recommended options. Emphasize that it's no‑obligation and that your team will get immediate insights.
+                The Friction X‑Ray includes a brief assessment of your workflows, a summary of your ghost work hotspots, and recommended options. Emphasize that it&apos;s no‑obligation and that your team will get immediate insights.
               </p>
               <p className="text-yellow-400 font-semibold">
                 Only a limited number of free X‑Ray slots are available each month.
@@ -171,7 +171,7 @@ export default function BookXRayPage() {
               What Our Customers Say
             </h2>
             <blockquote className="text-lg leading-8 text-gray-300 italic">
-              "The Friction X‑Ray uncovered tasks we'd been blindly doing for years. Within a week, Deskwise automated them and we felt the relief."
+              &quot;The Friction X‑Ray uncovered tasks we&apos;d been blindly doing for years. Within a week, Deskwise automated them and we felt the relief.&quot;
             </blockquote>
             <p className="mt-4 text-white font-semibold">
               — Michael Chen, COO, Colorado Springs

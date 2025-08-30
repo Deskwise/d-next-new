@@ -52,7 +52,7 @@ export default function ProofPage() {
                 <h3 className="text-xl font-semibold text-white mb-4">{snapshot.company}</h3>
                 <p className="text-gray-300 mb-6">{snapshot.result}</p>
                 <blockquote className="border-l-4 border-indigo-500 pl-4 italic text-gray-300">
-                  "{snapshot.quote}"
+                  &quot;{snapshot.quote}&quot;
                 </blockquote>
               </div>
             ))}

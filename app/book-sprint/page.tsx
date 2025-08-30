@@ -14,7 +14,7 @@ export default function BookSprintPage() {
               Book a Proof Sprint
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-              A 48‑hour sprint that guarantees a proof or you don't pay. Perfect for testing new ideas or priorities without a long-term commitment.
+              A 48‑hour sprint that guarantees a proof or you don&apos;t pay. Perfect for testing new ideas or priorities without a long-term commitment.
             </p>
           </div>
         </div>
@@ -25,11 +25,11 @@ export default function BookSprintPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl mb-8">
-              What's Included
+              What&apos;s Included
             </h2>
             <div className="text-left space-y-6 text-lg leading-8 text-gray-300">
               <p>
-                In just two days, our team delivers a working proof aligned with your goal. If we can't provide a usable proof, you get a full refund.
+                In just two days, our team delivers a working proof aligned with your goal. If we can&apos;t provide a usable proof, you get a full refund.
               </p>
               <ul className="list-disc list-inside space-y-2">
                 <li>48-hour dedicated sprint team</li>
@@ -175,7 +175,7 @@ export default function BookSprintPage() {
               Our Guarantee
             </h2>
             <p className="text-lg leading-8 text-gray-300">
-              If we can't deliver a usable proof within 48 hours, your sprint is completely free. No questions asked.
+              If we can&apos;t deliver a usable proof within 48 hours, your sprint is completely free. No questions asked.
             </p>
           </div>
         </div>

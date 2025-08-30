@@ -88,7 +88,7 @@ export default function OrchestrationsPage() {
               How It Works
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-              Choose a playbook, provide minimal inputs and let our background crew do the rest. Our Planner designs the workflow, the Implementer executes it, and the Validator checks outputs for quality and compliance. You'll receive a proof summary with default next actions. If we can't deliver, your run is free.
+              Choose a playbook, provide minimal inputs and let our background crew do the rest. Our Planner designs the workflow, the Implementer executes it, and the Validator checks outputs for quality and compliance. You&apos;ll receive a proof summary with default next actions. If we can&apos;t deliver, your run is free.
             </p>
           </div>
         </div>

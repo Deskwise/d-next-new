@@ -168,7 +168,7 @@ export default function Pricing() {
             <div className="bg-gray-800 rounded-lg p-6">
               <h4 className="text-lg font-semibold text-white mb-4">Proof Sprint ($999–$2,500)</h4>
               <p className="text-gray-300 text-sm">
-                A 48‑hour proof run; if we can't deliver a usable result, your sprint is free.
+                A 48‑hour proof run; if we can&apos;t deliver a usable result, your sprint is free.
               </p>
             </div>
           </div>

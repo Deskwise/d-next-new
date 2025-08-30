@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import SiteFooter from "@/components/SiteFooter";
+import Link from "next/link";
 import { transforms } from "@/lib/content-mapping";
 
 export default function ThinkWisePage() {
@@ -20,8 +21,7 @@ export default function ThinkWisePage() {
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="/book-xray"
-                className="rounded-xl px-5 py-3 text-sm font-medium text-white border border-white/20 hover:bg-white/10 hover:border-white/40 transition-all backdrop-blur-[20px]"
-                style={{ background: 'rgba(4,7,13,0.8)' }}
+                className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
                 Start with a Free Friction X‑Ray →
               </a>
@@ -62,7 +62,7 @@ export default function ThinkWisePage() {
                 </dt>
                 <dd className="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-300">
                   <p className="flex-auto">
-                    Generate multiple options, list their pros, cons, risks and acceptance criteria. Provide a recommended "safe default" and an estimated cost for each.
+                    Generate multiple options, list their pros, cons, risks and acceptance criteria. Provide a recommended &quot;safe default&quot; and an estimated cost for each.
                   </p>
                 </dd>
               </div>
@@ -132,16 +132,15 @@ export default function ThinkWisePage() {
               Proof Sprints — Results in 48 Hours
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-              In just two days, our team delivers a working proof aligned with your goal. If we can't provide a usable proof, you get a full refund. Perfect for testing new ideas or priorities without a long-term commitment.
+              In just two days, our team delivers a working proof aligned with your goal. If we can&apos;t provide a usable proof, you get a full refund. Perfect for testing new ideas or priorities without a long-term commitment.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
-              <a
+              <Link
                 href="/book-sprint"
-                className="rounded-xl px-5 py-3 text-sm font-medium text-white border border-white/20 hover:bg-white/10 hover:border-white/40 transition-all backdrop-blur-[20px]"
-                style={{ background: 'rgba(4,7,13,0.8)' }}
+                className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
                 Book a Proof Sprint →
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -160,15 +159,13 @@ export default function ThinkWisePage() {
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="/book-xray"
-                className="rounded-xl px-5 py-3 text-sm font-medium text-white border border-white/20 hover:bg-white/10 hover:border-white/40 transition-all backdrop-blur-[20px]"
-                style={{ background: 'rgba(4,7,13,0.8)' }}
+                className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
                 Book Free Friction X‑Ray →
               </a>
               <a
                 href="/proof"
-                className="rounded-xl px-5 py-3 text-sm font-medium text-white border border-white/20 hover:bg-white/10 hover:border-white/40 transition-all backdrop-blur-[20px]"
-                style={{ background: 'rgba(4,7,13,0.8)' }}
+                className="text-sm font-semibold leading-6 text-white"
               >
                 See Proofs →
               </a>

@@ -137,7 +137,7 @@ const PillNav: React.FC<PillNavProps> = ({
                   key={item.href} 
                   role="none" 
                   className="flex h-full"
-                  ref={(el) => (pillRefs.current[i] = el)}
+                  ref={(el) => { pillRefs.current[i] = el; }}
                 >
                   <motion.div
                     className="relative h-full"

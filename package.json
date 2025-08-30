@@ -4,11 +4,14 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build --turbopack",
+    "build": "next build",
     "start": "next start",
     "lint": "eslint",
     "b": "node behavior-activate.js",
     "behavior": "node behavior-activate.js"
+  },
+  "engines": {
+    "node": ">=20 <21"
   },
   "dependencies": {
     "@openai/codex": "^0.25.0",

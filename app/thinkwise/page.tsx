@@ -1,7 +1,6 @@
 import Navigation from "@/components/Navigation";
 import SiteFooter from "@/components/SiteFooter";
 import Link from "next/link";
-import { transforms } from "@/lib/content-mapping";
 
 export default function ThinkWisePage() {
   return (

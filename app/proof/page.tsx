@@ -68,7 +68,7 @@ export default function ProofPage() {
               Sample Artifacts
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-              Show screenshots or snippets of an executive brief, options page or proof summary. Emphasize clarity and brevity (appealing to "skimming" executives).
+              Show screenshots or snippets of an executive brief, options page or proof summary. Emphasize clarity and brevity (appealing to &quot;skimming&quot; executives).
             </p>
             <div className="mt-10 bg-gray-800 rounded-lg p-8">
               <div className="text-left">

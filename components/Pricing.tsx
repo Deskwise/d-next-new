@@ -1,5 +1,5 @@
 'use client';
-import { transforms } from "@/lib/content-mapping";
+
 
 export default function Pricing() {
   const plans = [

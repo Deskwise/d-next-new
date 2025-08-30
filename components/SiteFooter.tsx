@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 export default function SiteFooter() {
   return (
     <footer className="border-t border-white/10 mt-20 py-12 bg-dark">

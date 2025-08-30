@@ -1,7 +1,6 @@
 'use client';
 import { motion } from 'motion/react';
-import { transforms } from '@/lib/content-mapping';
-import { slideUp, stagger, viewportDefaults } from '@/lib/motion';
+import { slideUp, viewportDefaults } from '@/lib/motion';
 
 export default function ValueProps() {
   const benefits = [
@@ -59,7 +58,7 @@ export default function ValueProps() {
             }
           }}
         >
-          {benefits.map((benefit, index) => (
+          {benefits.map((benefit) => (
             <motion.div
               key={benefit.title}
               variants={slideUp}

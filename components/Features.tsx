@@ -60,7 +60,7 @@ export default function Features() {
             }
           }}
         >
-          {features.map((feature, index) => (
+          {features.map((feature) => (
             <motion.div
               key={feature.title}
               variants={slideUp}

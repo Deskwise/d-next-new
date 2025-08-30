@@ -139,7 +139,7 @@ export default function OrchestrationsPage() {
               Upgrade to a Proof Sprint
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-              Need more depth? Upgrade any playbook to a 48‑hour Proof Sprint. If we can't deliver a usable proof, your run is on us. Great for high‑stakes projects or custom workflows.
+              Need more depth? Upgrade any playbook to a 48‑hour Proof Sprint. If we can&apos;t deliver a usable proof, your run is on us. Great for high‑stakes projects or custom workflows.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a

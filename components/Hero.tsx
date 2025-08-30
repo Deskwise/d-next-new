@@ -12,11 +12,7 @@ const workSans = Work_Sans({
   weight: ['400', '500', '600', '700'],
 });
 
-const quintessential = Quintessential({
-  subsets: ['latin'],
-  display: 'swap',
-  weight: ['400'],
-});
+
 
 const HEADLINE_TITLES = [
   'Your Elite team of Consultants with a 148 IQ Working 24/7',
@@ -46,7 +42,7 @@ export default function Hero() {
   useEffect(() => {
     const init = async () => {
       const { gsap } = await import('gsap');
-      const Scramble: any = (await import('gsap/ScrambleTextPlugin').catch(() => null))?.ScrambleTextPlugin;
+      const Scramble: typeof import('gsap/ScrambleTextPlugin') | undefined = (await import('gsap/ScrambleTextPlugin').catch(() => null))?.ScrambleTextPlugin;
       if (Scramble) gsap.registerPlugin(Scramble);
 
       const quotes = Array.from((quotesContainerRef.current?.querySelectorAll('.quote') ?? [])) as HTMLElement[];

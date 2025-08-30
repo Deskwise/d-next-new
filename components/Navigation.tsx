@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion } from 'motion/react';
 import { slideUp, viewportDefaults } from '@/lib/motion';
 
@@ -29,16 +30,16 @@ export default function Navigation() {
           {/* Logo */}
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
-                             <img
-                 src="/images/Deskwise_logo.svg"
-                 alt="Deskwise logo"
-                 className="h-6 w-auto"
-                                   style={{
-                    filter: 'drop-shadow(0 0 2px rgba(166, 218, 255, 1.0)) drop-shadow(0 0 6px rgba(166, 218, 255, 0.6)) drop-shadow(0 0 10px rgba(166, 218, 255, 0.3))',
-                    stroke: 'rgba(166, 218, 255, 0.8)',
-                    strokeWidth: '1px'
-                  }}
-               />
+              <Image
+                src="/images/Deskwise_logo.svg"
+                alt="Deskwise logo"
+                width={24}
+                height={24}
+                className="h-6 w-auto"
+                style={{
+                  filter: 'drop-shadow(0 0 2px rgba(166, 218, 255, 1.0)) drop-shadow(0 0 6px rgba(166, 218, 255, 0.6)) drop-shadow(0 0 10px rgba(166, 218, 255, 0.3))',
+                }}
+              />
             </Link>
           </div>
 

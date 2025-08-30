@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Work_Sans, Quintessential, Instrument_Serif } from 'next/font/google';
 import "./globals.css";
 import LenisProvider from "./lenis-provider";
+import TabletQROverlay from "@/components/TabletQROverlay";
 
 const inter = Inter({
   subsets: ['latin'],
@@ -48,6 +49,7 @@ export default function RootLayout({
         className={`${inter.variable} ${workSans.variable} ${quintessential.variable} ${instrumentSerif.variable} antialiased`}
       >
         <LenisProvider>{children}</LenisProvider>
+        <TabletQROverlay />
       </body>
     </html>
   );

@@ -42,7 +42,7 @@ export default function Hero() {
   useEffect(() => {
     const init = async () => {
       const { gsap } = await import('gsap');
-      const Scramble: typeof import('gsap/ScrambleTextPlugin') | undefined = (await import('gsap/ScrambleTextPlugin').catch(() => null))?.ScrambleTextPlugin;
+      const Scramble = (await import('gsap/ScrambleTextPlugin').catch(() => null))?.default;
       if (Scramble) gsap.registerPlugin(Scramble);
 
       const quotes = Array.from((quotesContainerRef.current?.querySelectorAll('.quote') ?? [])) as HTMLElement[];

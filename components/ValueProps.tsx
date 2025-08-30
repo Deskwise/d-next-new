@@ -1,6 +1,7 @@
 'use client';
 import { motion } from 'motion/react';
 import { slideUp, viewportDefaults } from '@/lib/motion';
+import { transforms } from '@/lib/content-mapping';
 
 export default function ValueProps() {
   const benefits = [

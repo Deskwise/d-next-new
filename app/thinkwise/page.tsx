@@ -1,11 +1,9 @@
-import Navigation from "@/components/Navigation";
 import SiteFooter from "@/components/SiteFooter";
 import Link from "next/link";
 
 export default function ThinkWisePage() {
   return (
     <main className="bg-dark text-white">
-      <Navigation />
       
       {/* Hero Section */}
       <section className="relative isolate overflow-hidden bg-black py-24 sm:py-32">

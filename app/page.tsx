@@ -1,4 +1,3 @@
-import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import ValueProps from "@/components/ValueProps";
 import Features from "@/components/Features";
@@ -17,7 +16,6 @@ const clientLogos = [
 export default function Home() {
   return (
     <main className="bg-dark text-white">
-      <Navigation />
       <Hero />
       <ValueProps />
 

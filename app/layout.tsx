@@ -3,6 +3,7 @@ import { Inter, Work_Sans, Quintessential, Instrument_Serif } from 'next/font/go
 import "./globals.css";
 import LenisProvider from "./lenis-provider";
 import TabletQROverlay from "@/components/TabletQROverlay";
+import Navigation from "@/components/Navigation";
 
 const inter = Inter({
   subsets: ['latin'],
@@ -48,6 +49,7 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${workSans.variable} ${quintessential.variable} ${instrumentSerif.variable} antialiased`}
       >
+        <Navigation />
         <LenisProvider>{children}</LenisProvider>
         <TabletQROverlay />
       </body>

@@ -1,11 +1,9 @@
-import Navigation from "@/components/Navigation";
 import Pricing from "@/components/Pricing";
 import SiteFooter from "@/components/SiteFooter";
 
 export default function PricingPage() {
   return (
     <main className="bg-dark text-white">
-      <Navigation />
       
       {/* Hero Section */}
       <section className="relative isolate overflow-hidden bg-black py-24 sm:py-32">
